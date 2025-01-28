@@ -30,6 +30,7 @@ public class ClientController {
     private DataOutputStream dataOutputStream;
     private Stage primaryStage;
 
+
     public void initialize() {
         connectToServer();
     }
@@ -108,6 +109,15 @@ public class ClientController {
             }
         }
     }
+
+
+
+    /*The `ClientController` manages a JavaFX chat client. It connects to a server,
+   sends/receives text or image messages, updates the UI, and handles file selection.
+    Key methods include `initialize()` for setup,
+     `sendMessage()` for text, and `sendImage()` for images.*/
+
+
 
     private void sendMessage() {
         String message = textField.getText().trim();

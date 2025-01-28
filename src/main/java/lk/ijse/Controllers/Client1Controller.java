@@ -30,6 +30,11 @@ public class Client1Controller {
     private DataOutputStream dataOutputStream;
     private Stage primaryStage;
 
+
+    /*This Client1Controller class manages a JavaFX chat client. It connects to a server,
+    handles text and image messages, and updates the UI. Key methods include initialize() for setup,
+     sendMessage() for text, sendImage() for images, and closeConnection().*/
+
     public void initialize() {
         connectToServer();
     }

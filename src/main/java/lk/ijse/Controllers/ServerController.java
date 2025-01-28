@@ -126,6 +126,12 @@ public class ServerController {
         }
     }
 
+    /*The ServerController handles a JavaFX server application. It starts a server,
+     waits for a client, exchanges text or image messages, and updates the UI.
+      Key methods include startServer(),
+    receiveMessages(), sendMessage(), sendImage(), and appendMessage().*/
+
+
     private void sendImage(Image image, String imagePath) {
         try {
             File file = new File(imagePath);
